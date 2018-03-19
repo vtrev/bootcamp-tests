@@ -5,6 +5,6 @@ describe('Count regNumber', function () {
     });
     it('Should return the number of registerations in a string', function () {
 
-        assert.equal(1, countRegNumber('CA 42665, AA 12 RT GP'));
+        assert.equal(, countRegNumber('CA 42665, AA 12 RT GP'));
     });
 });

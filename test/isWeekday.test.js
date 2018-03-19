@@ -8,3 +8,4 @@ describe('isWeekday function', function () {
 
     });
 });
+ 
