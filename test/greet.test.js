@@ -1,10 +1,11 @@
-describe('The greet function', function () {
+describe('greetFunction', function () {
 
-    it('should greet Andrew correctly', function () {
-        assert.equal('Hello, Andrew', greet('Andrew'));
+    it("Should return a string that greets the name in the input argument ", function () {
+        assert.equal('Hello, Mpume', greet('Mpume'));
     });
-    it('should greet Vusi correctly', function () {
-        // this test will fail - can you fix it?
-        assert.equal('Hello, Vusi', greet('Vusi'));
+    it('Should return false if the input argument is not of type string', function () {
+
+        assert.equal(false, greet(55));
+
     });
 });

@@ -20,8 +20,9 @@ function mostProfitableDepartment(salesData) {
     for (let i = 0; i < arrayOfValues.length; i++) {
         if (arrayOfValues[i] > arrayOfValues[i + 1]) {
             arrayOfValues[0] = arrayOfValues[i];
+	    var maxDP = arrayOfValues[0];
         }
-        var maxDP = arrayOfValues[0];
+        
     }
 
     //looping through the  dpdata object to match if 

@@ -24,5 +24,10 @@ describe('find items over function', function () {
     it('should return items that have a higher quantity than threshold', function () {
         assert(list, findItemsOver(threshold));
 
-    });
+    });	
+    it('Should ensure the threshold is a valid number',function(){
+	assert.typeOf(threshold,'number','The threshold must be a valid number');
+	});
+
+
 });

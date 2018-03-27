@@ -1,3 +1,9 @@
 function yearsAgo(year) {
-    return (2018 - year)
+
+	if(typeof(year) == 'number'){
+	
+   	 return (2018 - year)
+	}else{
+	return false;
+	}
 }

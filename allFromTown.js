@@ -1,8 +1,9 @@
 var stell = [];
 
-function allFromTown() {
+function allFromTown(regString) {
+	if(typeof(regString) == 'string'){	
 
-    var arr = regString.split(",");
+	var arr = regString.split(",");
 
     for (var i = 0; i < arr.length; i++) {
         if (arr[i].startsWith(loc)) {
@@ -13,4 +14,7 @@ function allFromTown() {
     }
     //console.log(stell);
     return stell;
+	}else{
+	return false
+	} 
 }

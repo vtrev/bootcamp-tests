@@ -11,5 +11,5 @@ function totalPhoneBill(data) {
         var total = ((sms_count * 0.65) + (call_count * 2.75));
         var total = total.toFixed(2);
     }
-    return 'R' + total;
+    return [total ,'R'+total]
 }

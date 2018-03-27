@@ -102,10 +102,10 @@ var salesData = [{
 
 
 
-describe('mostProfitableDepartment function',function(){
+describe('mostProfitableDepartment',function(){
 
-it('Should return the  name ofthe most profitable department given a certain data set',function(){
-assert.equal("carpentry", mostProfitableDepartment(salesData));
+	it('Should return the  name ofthe most profitable department given a certain data set',function(){
+	assert.equal("carpentry", mostProfitableDepartment(salesData));
 
 	});
 });

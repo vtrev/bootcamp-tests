@@ -29,22 +29,18 @@ var results = [
     },
 ];
 
-
-//
-//describe('', function () {
-//    it('should return a list of items that have a quantity of 20 and over given a set of data', function () {
-//        assert.equal(results, findItemsOver20(list));
-//
-//    });
-//});
-
-
-
-
-describe('find items over 20 function', function () {
-    it('Should return items with quantity over 20', function () {
+describe('findItemsOver20', function () {
+    it('Should return items with quantity over 20 given a list of objects', function () {
         assert.deepEqual(results, findItemsOver20(list));
 
     });
+    it('Ensure item quantity is at least 20 ', function(){
+	assert.isAtLeast(findItemsOver20(list)[0].qty,20,'The quantity should be 20 and above')
+	});
+
+	it('Should make sure the item quantity is not below 20 ',function(){
+	assert.isBelow(!findItemsOver20(list)[1].qty,20,'The quantity should not be below 20');
+});
+
 
 });

@@ -1,11 +1,17 @@
 var out = ['CJ 678 543', 'CJ 67890'];
-var reg = 'CL 900, CJ 678 543, CA 34567, CJ 67890, CN 7864';
+var registration = 'CL 900, CJ 678 543, CA 34567, CJ 67890, CN 7864';
 
-describe('Should count all registeration numbers from Paarl', function () {
+describe('countAllPaarl' ,function(){
 
-    it('Should return all registeration numbers from Paarl', function () {
-        assert.deepEqual(out, CountAllPaarl(reg));
+	it('Should return an array with all registration numbers from Paarl given a string input',function(){
+		assert.deepEqual(countAllPaarl(registration),out);
+	});
+	it( 'Should return false if a given input is not a string',function(){
+		assert.equal(false, countAllPaarl(['this is not a string'] ) );
+	});
 
+	it('The array must not be null, it may return an empty list if there are no cars from Paarl ',function(){
+		assert.isNotNull(countAllPaarl('test string with no cars from Paarl'));
+	});
 
-    });
 });

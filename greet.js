@@ -1,4 +1,14 @@
+
 function greet(name) {
-    var string = ('Hello, ' + name);
-    return string;
+
+        if(typeof(name)=='string') {
+        var name = name.replace(name.charAt(0),name.charAt(0).toUpperCase()); 
+        var helloName = ('Hello, ' + name);
+        return helloName;
+
+         } else {
+         	console.log('Please enter a string');
+        	return false;
+    }
+
 }
