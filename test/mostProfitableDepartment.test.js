@@ -108,4 +108,13 @@ describe('mostProfitableDepartment',function(){
 	assert.equal("carpentry", mostProfitableDepartment(salesData));
 
 	});
-});
+
+	it('Should ensure that the output is a string and nothing else', function(){
+		assert.isString(mostProfitableDepartment(salesData),'The output of the function(department) is the name as string');
+	});
+
+
+	});
+
+
+
