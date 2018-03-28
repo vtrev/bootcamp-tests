@@ -20,7 +20,7 @@ var list = [
 var threshold = 20;
 
 
-describe('find items over function', function () {
+describe('findItemsOver', function () {
     it('should return items that have a higher quantity than threshold', function () {
         assert(list, findItemsOver(threshold));
 

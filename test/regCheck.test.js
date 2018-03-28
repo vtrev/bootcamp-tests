@@ -1,4 +1,4 @@
-describe('regCheck function', function () {
+describe('regCheck', function () {
     it('Should return true if a registration number matches a given location', function () {
         assert.equal(true, regCheck('DV 23 NB GP', 'GP'))
     });
